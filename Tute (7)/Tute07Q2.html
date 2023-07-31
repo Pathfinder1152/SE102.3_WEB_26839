@@ -1,0 +1,44 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+         window.onload=function(){
+            getMarks();
+         }
+         function getMarks()
+         {
+            var total = 0;
+            for(var i=0;i<5;i++)
+            {
+                var marks = parseInt(window.prompt("Enter marks: "));
+                total=total+marks;
+            }
+            document.write("Total is " + total);
+            var avg = parseFloat(total/5);
+            document.write("<br>");
+            document.write("Average is " + avg);
+            document.write("<br>");
+
+
+
+            var button = document.createElement("button");
+            button.innerHTML = "Grade";
+            button.onclick = function(){
+                if(avg>30)
+                {
+                    window.alert("Congrats you've passed");
+                }
+                else
+                {
+                    window,alert("Better luck next time ");
+                }
+                document.body.appendChild(button);
+            }
+         }
+
+
+
+        </script>
+    </body>
+</html>

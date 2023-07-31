@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Color change</title>
+    </head>
+    <body>
+        <button onmouseover="buttonClick()" onmouseout="restoreColor()">Blue</button>
+        <button onmouseover="buttons()" onmouseout="restoreColor()">Red</button>
+        <button onmouseover="button()" onmouseout="restoreColor()">Yellow</button>
+         
+        <script>
+            function buttonClick()
+            {
+                document.bgColor="blue";
+            }
+            function buttons()
+            {
+                document.bgColor="red";
+            }
+            function button()
+            {
+                document.bgColor="yellow";
+            }
+            function restoreColor()
+            {
+                document.bgColor="white";
+            }
+
+
+        </script>
+    </body>
+</html>
