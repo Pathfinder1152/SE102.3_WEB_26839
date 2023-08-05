@@ -1,0 +1,81 @@
+<html>
+    <head>
+    <title>Sign Up</title>
+        
+    <style type="text/css">
+    
+        body{
+            background-image: url(sign.jpeg);
+            background-size: cover;
+        }
+        
+        form{
+            color: orange;
+            text-align: center;
+            display: inline-block;
+            height: 70vh;
+        }
+        
+        label{
+            width: 100px;
+            display: inline-block;
+            
+        }
+        
+        .chk{
+            text-align: end;
+        }
+        
+        h1{
+            margin: 8px;
+            shape-margin: 12
+        }
+        
+        .line{
+            
+        }
+    
+    </style>
+    
+    </head>
+<body>
+        <center>
+        <dl style="background-color:darkblue; width: 500px;">
+        <h1 style="background-color: coral; color: white; font-weight: 200;">Sign Up</h1>
+        <form name="form1" method="post">
+        <label for="fname">First Name: </label><input type="text" id="fname" placeholder="Enter First Name"><br><br>
+        <label for="lname">Last Name: </label><input type="text" id="lname" placeholder="Enter Last Name"><br><br>
+        Date of Birth: 
+            <select name="date">
+            <option value="date" disabled selected hidden>Date</option>
+            <option value="21">21</option>
+        </select>
+            <select name="month">
+            <option value="month" disabled selected hidden>Month</option>
+            <option value="jan">January</option>
+        </select>
+            <select name="year">
+            <option value="year" disabled selected hidden>Year</option>
+            <option value="2002">2002</option>
+        </select><br><br>
+        Gender: <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" value="female">Female</label>
+        <br><br>
+        Country: 
+            <select name="country">
+            <option value="country" disabled selected hidden>Country</option>
+            <option value="sl">Sri Lanka</option>
+        </select>
+        <br><br>
+        <label for="email">Email: </label><input type="text" id="email" placeholder="Enter Email"><br><br>
+        <label for="phone">Phone: </label><input type="text" id="phone" placeholder="Enter Phone"><br><br>
+        <label for="pass1">Password: </label><input type="password" id="pass1" name="pass1"><br><br>
+        <label for="pass2">Confirm Password: </label><input type="password" id="pass2" name="pass2"><br><br>
+        <div class="chk"><input type="checkbox" id="terms" value="agree">I agree to the terms of use</div><br><br>
+        <div class="line">
+        <button name="submit" type="submit" value="submit">Submit</button>
+        <button name="reset" type="reset" value="reset">Cancel</button>
+        </div>
+        </dl></form></center>
+</body>    
+</html>
